@@ -12,6 +12,11 @@ try {
     console.error('Erreur lors du chargement du fichier questions.json:', err);
 }
 
+// Route pour la racine "/"
+app.get('/', (req, res) => {
+    res.send('Bienvenue sur l\'API ! Les routes disponibles sont : /api/categories, /api/categories/:category/questions, etc.');
+});
+
 // Route pour obtenir la liste des catégories
 app.get('/api/categories', (req, res) => {
     const categories = Object.keys(questionsData);
@@ -44,3 +49,4 @@ app.get('/api/categories/:category/reponses/:questionKey', (req, res) => {
 app.listen(port, () => {
     console.log(`API en cours d'exécution sur http://localhost:${port}`);
 });
+
