@@ -4,7 +4,7 @@
         "Comment se connecter à Crossway ?",
         "Comment avoir accès au module Crossway ?"
       ],
-      "réponses": {
+      "reponses": {
         "default": "Voici les étapes permettant d’accéder à Crossway : \n- Double clic sur le module\n- Saisir le login puis la signature personnelle, valider la signature\n- Sélectionner le planning puis Validation",
         "pause_session": "Il est possible de mettre la session en pause : \n- Clic droit sur le bandeau bleu supérieur, puis clic sur pause"
       }
@@ -17,7 +17,7 @@
         "Comment afficher les filtres ?",
         "Comment mettre un filtre ?"
       ],
-      "réponses": {
+      "reponses": {
         "default": "Pour afficher et mettre un filtre, il suffit de cliquer en bas de l’écran du planning de l’unité de soins.",
         "nota": "Nota : Par défaut, l'affichage se fait sur les patients présents du planning."
       }
@@ -28,7 +28,7 @@
           "Quels sont les différents filtres ?",
           "À quoi sert un filtre ?"
         ],
-        "réponses": {
+        "reponses": {
           "vue_patients_presents": "Vue sur tous les patients présents : Ce filtre permet la visualisation de tous les patients présents dans un lit à la date du jour ainsi que les pré-admissions (écriture bleue) jusqu'à ce jour.\n- Écriture bleu clair : Patient non validé\n- Écriture noire : Patient validé\n- Écriture rouge : Date de sortie prévisionnelle < date du jour.",
           "vue_chambres_lits": "Vue par chambres et lits (uniquement en planning d'hébergement) : Ce filtre permet l’affichage de tous les lits, disponibles et occupés.\n- Alternance de couleurs BLANC / JAUNE pour séparer les chambres.",
           "vue_hebdo_chambres_lits": "Vue hebdomadaire par chambre et lits (uniquement en planning d'hébergement) : Ce filtre permet l’affichage de tous les lits sur une semaine.",
@@ -43,7 +43,7 @@
           "Comment rechercher les séjours d'un patient ?",
           "Comment trouver la liste des séjours d'un patient ?"
         ],
-        "réponses": {
+        "reponses": {
           "default": "Lorsque le patient est rentré et sorti sur la journée en cours, il ne sera visible que par le filtre 'Mouvements d'un jour donné'.\nEn haut à gauche de l'écran, sélectionner Planning / Recherche des séjours d'un patient :\nL'écran de recherche s'ouvre. Saisir les premières lettres du nom et prénom du patient +/- DDN. Les différents séjours s'afficheront pour la sélection du séjour demandé."
         }
       },
@@ -59,7 +59,7 @@
     	"Que contient la partie droite de l'écran de synthèse ?",
     	"Quels filtres sont disponibles dans la synthèse ?"
   	],
-  	"réponses": {
+  	"reponses": {
     	"acces_synthese": "Depuis l’écran d’accueil de UNIT, cliquer sur le bouton Synthèse pour visualiser la synthèse du dossier médical du patient.",
     	"contenu_synthese": "La synthèse regroupe tout le dossier médical du patient, notamment les événements et productions concernant le patient. Ces informations s'affichent dans un ordre chronologique inversé.",
     	"visualiser_donnees_synthese": "Cliquer sur le bouton en haut de l’écran pour sélectionner des données spécifiques de la synthèse, comme les événements ou documents.",
@@ -77,7 +77,7 @@
     	"Quels types d'informations sont disponibles dans les RDV ?",
     	"Que signifie l’icône d’un rendez-vous dans l’arborescence ?"
   	],
-  	"réponses": {
+  	"reponses": {
     	"acces_rdv": "Depuis l’écran d’accueil de UNIT, cliquer sur le bouton Rendez-vous pour visualiser tous les rendez-vous du patient ainsi que les documents liés.",
     	"informations_rdv": "Les rendez-vous affichent les dates, les types de RDV (plateaux techniques, consultations) et les documents associés.",
     	"icone_rdv": "Chaque événement, comme un rendez-vous, est représenté par un icône spécifique (voir tableau des icônes pour plus de détails)."
@@ -90,7 +90,7 @@
     	"Que signifient les abréviations dans la colonne « Libellé » des séjours ?",
     	"Que signifient les états dans la colonne « État » des séjours ?"
   	],
-  	"réponses": {
+  	"reponses": {
     	"acces_sejours": "Depuis l’écran d’accueil de UNIT, cliquer sur le bouton Séjours pour visualiser la liste des séjours du patient ainsi que les documents liés.",
     	"recherche_sejour": "En haut à gauche de l'écran, sélectionner Planning > Recherche des séjours d’un patient. Saisir les premières lettres du nom, prénom et la date de naissance (facultatif) pour voir les séjours disponibles.",
     	"abreviations_libelle": {
@@ -112,7 +112,7 @@
     	"Comment imprimer un document ou un ensemble de documents ?",
     	"Quels sont les onglets disponibles pour la consultation de la synthèse, des RDV ou des séjours ?"
   	],
-  	"réponses": {
+  	"reponses": {
     	"filtrer_evenements": "Depuis l’onglet Filtres ou Filtres avancés, vous pouvez filtrer les événements sur des critères tels que les actes, diagnostics, documents, etc., ainsi que sur une période donnée ou des unités médicales spécifiques.",
     	"ordre_chronologique": "Dans l’onglet Filtres, vous pouvez choisir d’afficher les événements du plus récent au plus ancien (par défaut) ou en ordre chronologique.",
     	"affichage_plein_ecran": "Cliquer sur un événement ou un document dans la partie gauche de l'écran pour afficher les détails dans la partie droite. Il est ensuite possible de passer en plein écran pour consulter le document.",
@@ -129,11 +129,11 @@
 	"questions": [
   	{
     	"question": "Comment saisir un motif d'hospitalisation ?",
-    	"réponse": "Cliquer sur le bouton à droite de l’écran après avoir sélectionné un patient, puis sélectionner 'En texte libre'."
+    	"reponse": "Cliquer sur le bouton à droite de l’écran après avoir sélectionné un patient, puis sélectionner 'En texte libre'."
   	},
   	{
     	"question": "Que faire après avoir sélectionné 'En texte libre' ?",
-    	"réponse": "Après avoir sélectionné 'En texte libre', choisir 'Saisie texte'. La fenêtre 'Saisie/Modification des motifs d’hospitalisation' s’affiche avec une cellule de saisie pour le motif."
+    	"reponse": "Après avoir sélectionné 'En texte libre', choisir 'Saisie texte'. La fenêtre 'Saisie/Modification des motifs d’hospitalisation' s’affiche avec une cellule de saisie pour le motif."
   	}
 	]
   },
@@ -142,27 +142,27 @@
 	"questions": [
   	{
     	"question": "Qui peut créer ou modifier une fiche médecin ?",
-    	"réponse": "Seul le DPI pourra créer ou modifier une fiche médecin. Merci de nous prévenir dès que vous avez des infos."
+    	"reponse": "Seul le DPI pourra créer ou modifier une fiche médecin. Merci de nous prévenir dès que vous avez des infos."
   	},
   	{
     	"question": "Comment afficher la liste des médecins correspondants d’un patient ?",
-    	"réponse": "En cliquant sur le bouton ‘médecins’, l’écran 'médecins' s’affiche. Dans le rectangle supérieur 'Médecins correspondants', vous verrez les professionnels de santé affectés à ce patient."
+    	"reponse": "En cliquant sur le bouton ‘médecins’, l’écran 'médecins' s’affiche. Dans le rectangle supérieur 'Médecins correspondants', vous verrez les professionnels de santé affectés à ce patient."
   	},
   	{
     	"question": "Comment affecter un médecin à un patient ?",
-    	"réponse": "Pour affecter un médecin à un patient sélectionné, recherchez d’abord le médecin dans la base des médecins en tapant son nom, puis cliquez sur le bouton de recherche. Une liste de médecins s’affiche, sélectionnez celui qui correspond et cliquez sur le bouton ‘affecter’ pour le modifier."
+    	"reponse": "Pour affecter un médecin à un patient sélectionné, recherchez d’abord le médecin dans la base des médecins en tapant son nom, puis cliquez sur le bouton de recherche. Une liste de médecins s’affiche, sélectionnez celui qui correspond et cliquez sur le bouton ‘affecter’ pour le modifier."
   	},
   	{
     	"question": "Que faire après avoir sélectionné un médecin dans la liste ?",
-    	"réponse": "L’écran 'Modification d’une fiche Professionnelle de Santé' s’affiche. Précisez s’il s’agit du médecin traitant, spécialiste ou envoyé par. En cliquant sur OK, le médecin apparaîtra sur le tableau des médecins correspondants du patient."
+    	"reponse": "L’écran 'Modification d’une fiche Professionnelle de Santé' s’affiche. Précisez s’il s’agit du médecin traitant, spécialiste ou envoyé par. En cliquant sur OK, le médecin apparaîtra sur le tableau des médecins correspondants du patient."
   	},
   	{
     	"question": "Comment supprimer un professionnel de santé affecté à un patient ?",
-    	"réponse": "Pour supprimer un professionnel de santé affecté au patient, cliquez sur le bouton ‘enlever’. Un message vous demandera de qualifier la raison de la suppression."
+    	"reponse": "Pour supprimer un professionnel de santé affecté au patient, cliquez sur le bouton ‘enlever’. Un message vous demandera de qualifier la raison de la suppression."
   	},
   	{
     	"question": "Comment consulter les informations concernant un professionnel de santé ?",
-    	"réponse": "Pour consulter les informations concernant le professionnel de santé sélectionné, cliquez sur le bouton ‘voir’."
+    	"reponse": "Pour consulter les informations concernant le professionnel de santé sélectionné, cliquez sur le bouton ‘voir’."
   	}
 	]
   },
@@ -171,11 +171,11 @@
 	"questions": [
   	{
     	"question": "Comment accéder à la saisie des antécédents d’un patient ?",
-    	"réponse": "Après avoir sélectionné un patient, cliquer sur 'antéc.' dans la barre à droite de l’écran. L’écran 'Antécédents : nom du patient' s’affiche avec le traitement de texte 'WPTool'."
+    	"reponse": "Après avoir sélectionné un patient, cliquer sur 'antéc.' dans la barre à droite de l’écran. L’écran 'Antécédents : nom du patient' s’affiche avec le traitement de texte 'WPTool'."
   	},
   	{
     	"question": "Comment valider les antécédents saisis ?",
-    	"réponse": "Pour valider les antécédents, soit sélectionner 'Enregistrer' depuis le menu Fichier, soit cliquer sur 'fermer' dans la barre de menu ou la croix en haut à droite de l’écran. Un message s’affiche demandant s’il faut sauvegarder le document ou non. En cliquant 'oui', le document sera enregistré.\nLe bouton 'Antéc.' est orange et les informations s’affichent depuis l’éditeur 'WPTool'. Ils indiquent des informations partagées avec tout l’hôpital. Attention à ne pas faire de suppression intempestive."
+    	"reponse": "Pour valider les antécédents, soit sélectionner 'Enregistrer' depuis le menu Fichier, soit cliquer sur 'fermer' dans la barre de menu ou la croix en haut à droite de l’écran. Un message s’affiche demandant s’il faut sauvegarder le document ou non. En cliquant 'oui', le document sera enregistré.\nLe bouton 'Antéc.' est orange et les informations s’affichent depuis l’éditeur 'WPTool'. Ils indiquent des informations partagées avec tout l’hôpital. Attention à ne pas faire de suppression intempestive."
   	}
 	]
   },
@@ -184,11 +184,11 @@
 	"questions": [
   	{
     	"question": "Comment accéder à la saisie des données vitales d’un patient ?",
-    	"réponse": "Après avoir sélectionné un patient, cliquer sur 'D.Vitales' dans la barre à droite de l’écran. L’écran 'Données Vitales : nom du patient' s’affiche."
+    	"reponse": "Après avoir sélectionné un patient, cliquer sur 'D.Vitales' dans la barre à droite de l’écran. L’écran 'Données Vitales : nom du patient' s’affiche."
   	},
   	{
     	"question": "Comment valider les données vitales saisies ?",
-    	"réponse": "Pour valider les données vitales, soit sélectionner 'Enregistrer' depuis le menu Fichier, soit cliquer sur 'fermer' dans la barre de menu ou la croix en haut à droite de l’écran. Un message s’affiche demandant s’il faut sauvegarder le document ou non. En cliquant 'oui', le document sera enregistré.\nLe bouton 'D.Vitales' est orange et indique que les informations sont partagées avec tout l’hôpital. Attention à ne pas faire de suppression intempestive."  	
+    	"reponse": "Pour valider les données vitales, soit sélectionner 'Enregistrer' depuis le menu Fichier, soit cliquer sur 'fermer' dans la barre de menu ou la croix en haut à droite de l’écran. Un message s’affiche demandant s’il faut sauvegarder le document ou non. En cliquant 'oui', le document sera enregistré.\nLe bouton 'D.Vitales' est orange et indique que les informations sont partagées avec tout l’hôpital. Attention à ne pas faire de suppression intempestive."  	
   	}
 	]
   },
@@ -197,15 +197,15 @@
 	"questions": [
   	{
     	"question": "Quelle est la fonction de la colonne ALD dans l’application UNIT ?",
-    	"réponse": "La colonne ALD apparaît dans l’écran principal de l’application UNIT.\nElle permet d’indiquer si le patient présente une affection de longue durée et si l’hospitalisation est en rapport avec celle-ci\nSi le patient admis dans votre service présente une affection de longue durée, la colonne ALD prend la valeur XXX ou 100 :\n- Le médecin doit saisir le formulaire ALD si ce séjour dans votre service est en rapport avec cette affection.\nSi le patient ne présente pas une affection de longue durée, la valeur de la colonne ALD est vide (‘ ‘).\nPas de saisie du formulaire ALD sauf si l’hospitalisation de ce patient est en rapport avec une Affection Longue Durée."
+    	"reponse": "La colonne ALD apparaît dans l’écran principal de l’application UNIT.\nElle permet d’indiquer si le patient présente une affection de longue durée et si l’hospitalisation est en rapport avec celle-ci\nSi le patient admis dans votre service présente une affection de longue durée, la colonne ALD prend la valeur XXX ou 100 :\n- Le médecin doit saisir le formulaire ALD si ce séjour dans votre service est en rapport avec cette affection.\nSi le patient ne présente pas une affection de longue durée, la valeur de la colonne ALD est vide (‘ ‘).\nPas de saisie du formulaire ALD sauf si l’hospitalisation de ce patient est en rapport avec une Affection Longue Durée."
   	},
   	{
     	"question": "Que signifient les différentes valeurs dans la colonne ALD ?",
-    	"réponse": "- **XXX** : Le patient est couvert à 100% actuellement : saisie du formulaire d’ALD.\n- **100** : Le dossier doit être mis à jour sur CPAGE : saisie du formulaire d’ALD.\n- **OUI** : Un formulaire a été saisi pour ce séjour. La pathologie de ce patient est en rapport avec son affection longue durée.\n- **NON** : Un formulaire a été saisi pour ce séjour. La pathologie de ce patient n’est pas en rapport avec son affection longue durée.\n- **???** : Un formulaire ALD a été saisi mais aucune valeur n’a été renseignée.\n- **vide** : Patient qui n’est pas couvert actuellement à 100 % ; à renseigner si le patient présente maintenant une affection ALD."
+    	"reponse": "- **XXX** : Le patient est couvert à 100% actuellement : saisie du formulaire d’ALD.\n- **100** : Le dossier doit être mis à jour sur CPAGE : saisie du formulaire d’ALD.\n- **OUI** : Un formulaire a été saisi pour ce séjour. La pathologie de ce patient est en rapport avec son affection longue durée.\n- **NON** : Un formulaire a été saisi pour ce séjour. La pathologie de ce patient n’est pas en rapport avec son affection longue durée.\n- **???** : Un formulaire ALD a été saisi mais aucune valeur n’a été renseignée.\n- **vide** : Patient qui n’est pas couvert actuellement à 100 % ; à renseigner si le patient présente maintenant une affection ALD."
   	},
   	{
     	"question": "Comment saisir le formulaire d’ALD ?",
-    	"réponse": "Pour saisir le formulaire d’ALD :\n1. Cliquer sur 'Formulaires'.\n2. Clic sur 'Ajouter' pour trouver le document Type ALD.\n3. Sélectionner le document type ALD puis cliquer sur le bouton 'Créer' ou double clic sur la ligne du document type ALD.\n4. Par défaut, le rédacteur est le médecin responsable du patient renseigné dans Unit. (Choisir dans le menu déroulant si besoin).\n5. Clic sur Oui ou Non et valider par Ok."
+    	"reponse": "Pour saisir le formulaire d’ALD :\n1. Cliquer sur 'Formulaires'.\n2. Clic sur 'Ajouter' pour trouver le document Type ALD.\n3. Sélectionner le document type ALD puis cliquer sur le bouton 'Créer' ou double clic sur la ligne du document type ALD.\n4. Par défaut, le rédacteur est le médecin responsable du patient renseigné dans Unit. (Choisir dans le menu déroulant si besoin).\n5. Clic sur Oui ou Non et valider par Ok."
   	}
 	]
   },
@@ -214,11 +214,11 @@
 	"questions": [
   	{
     	"question": "Quelle est la fonction de la colonne BMR ?",
-    	"réponse": "La colonne BMR sert à faire apparaître une alerte visuelle devant le nom du patient porteur d'une bactérie multi-résistante identifiée au niveau du CLIN, qui a créé un formulaire précisant la bactérie.\nL'icône d'alerte disparaît dès qu'au niveau du CLIN, un autre formulaire précisant la fin d'alerte sera établi"
+    	"reponse": "La colonne BMR sert à faire apparaître une alerte visuelle devant le nom du patient porteur d'une bactérie multi-résistante identifiée au niveau du CLIN, qui a créé un formulaire précisant la bactérie.\nL'icône d'alerte disparaît dès qu'au niveau du CLIN, un autre formulaire précisant la fin d'alerte sera établi"
   	},
   	{
     	"question": "Où peut-on retrouver le formulaire d'alerte BMR ?",
-    	"réponse": "On retrouve le formulaire d'alerte BMR dans la synthèse, représenté par une icône d'alerte\nLe dernier formulaire d'alerte BMR précise la date de fin d'alerte."
+    	"reponse": "On retrouve le formulaire d'alerte BMR dans la synthèse, représenté par une icône d'alerte\nLe dernier formulaire d'alerte BMR précise la date de fin d'alerte."
   	}
 	]
   },
@@ -227,14 +227,14 @@
 	"questions": [
   	{
     	"question": "Comment créer un document pour un patient ?",
-    	"réponse": "Depuis le planning, sélectionner le patient pour lequel on souhaite créer un document, puis sélectionner le type de document. Cliquer sur le bouton C.Rendu, Courrier, Ordonnance ou Certificat à droite de l’écran après avoir sélectionné un patient.\nL’écran de liste des documents s’affiche. Si des documents ont été saisis pour cet événement, ils s’affichent dans le cadre central selon le volet (Courrier, Ordonnances, Compte-rendu, ...) sélectionné.\nPour ajouter un nouveau document : Cliquez sur + Ajouter en bas à gauche de l'écran pour créer un document, puis sélectionner le type de document. Vous avez aussi accès à la liste des documents existants pour l'évènement du patient. "
+    	"reponse": "Depuis le planning, sélectionner le patient pour lequel on souhaite créer un document, puis sélectionner le type de document. Cliquer sur le bouton C.Rendu, Courrier, Ordonnance ou Certificat à droite de l’écran après avoir sélectionné un patient.\nL’écran de liste des documents s’affiche. Si des documents ont été saisis pour cet événement, ils s’affichent dans le cadre central selon le volet (Courrier, Ordonnances, Compte-rendu, ...) sélectionné.\nPour ajouter un nouveau document : Cliquez sur + Ajouter en bas à gauche de l'écran pour créer un document, puis sélectionner le type de document. Vous avez aussi accès à la liste des documents existants pour l'évènement du patient. "
   	}
 	]
   },
 
   "saisie_documents": {
 	"question": "Quelles sont les étapes pour créer un document ?",
-	"réponse": [
+	"reponse": [
   	"1. La page de création de document apparaît. Sélectionner le document type.",
   	"2. RENSEIGNER un libellé précédé d'un RADICAL en respectant la nomenclature des documents types.",
   	"3. Vérifier le nom du rédacteur et cocher le/les destinataires.",
@@ -251,7 +251,7 @@
 
   "validation_documents": {
 	"question": "Quelles sont les étapes pour valider un document ?",
-	"réponse": [
+	"reponse": [
   	"1. Depuis la liste de documents associés à un évènement, déterminer l'état du document.",
   	"2. Vérifier l'habilitation du document : Public (visible par tous), Privé pour un utilisateur (visible uniquement par l’utilisateur), ou Privé pour l’Unité (visible uniquement pour l’UM).",
   	"3. Vérifier l'état du document : En Cours (par défaut), à lire, à modifier, à signer, à contre-signer, validé ou expédié.",
@@ -267,7 +267,7 @@
 
   "messagerie_securisee": {
 	"question": "Quelles sont les étapes pour envoyer des documents par messagerie sécurisée aux médecins extérieurs ?",
-	"réponse": [
+	"reponse": [
   	"1. Dans le cadre des échanges entre la ville et l'hôpital, accéder au document à envoyer (courrier de consultation, d'hospitalisation ou compte rendu opératoire).",
   	"2. Assurez-vous que le document est correctement rédigé et finalisé.",
   	"3. Vérifier que le médecin destinataire possède une adresse mail sécurisée.",
@@ -278,7 +278,7 @@
   },
   "scanner_document": {
 	"question": "Quelles sont les étapes pour scanner un document ?",
-	"réponse": [
+	"reponse": [
   	"1. Sélectionner un patient.",
   	"2. Cliquer sur l’icône 'Images' pour accéder à la fonctionnalité de numérisation.",
   	"3. Sélectionner l’événement associé au document à scanner.",
@@ -291,7 +291,7 @@
   },
   "integrer_image": {
 	"question": "Quelles sont les étapes pour intégrer une image ?",
-	"réponse": [
+	"reponse": [
   	"1. Sélectionner un patient.",
   	"2. Cliquer sur l’icône 'Images' pour accéder à la fonctionnalité d'intégration d'images.",
   	"3. Dans le menu, choisir 'Image' puis 'Intégrer'.",
