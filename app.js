@@ -6,6 +6,8 @@ const port = 3001;
 const cors = require('cors');
 app.use(cors());
 
+// Middleware pour analyser les requêtes JSON
+app.use(express.json());
 
 // Chargement du fichier JSON avec gestion des erreurs
 let questionsData = {};
@@ -14,6 +16,27 @@ try {
 } catch (err) {
     console.error('Erreur lors du chargement du fichier questions.json:', err);
 }
+
+// Fonction pour parcourir récursivement les catégories et sous-catégories
+const traverseCategories = (data, userMessage) => {
+    for (const category in data) {
+        const categoryData = data[category];
+        const questions = categoryData.questions || [];
+        const reponses = categoryData.reponses || {};
+
+        // Vérifie si la question correspond (en ignorant la casse)
+        if (questions.some(q => q.toLowerCase() === userMessage)) {
+            return reponses.default || "Réponse non définie.";
+        }
+
+        // Si sous-catégorie, continue la recherche
+        if (typeof categoryData === 'object') {
+            const subResponse = traverseCategories(categoryData, userMessage);
+            if (subResponse) return subResponse;
+        }
+    }
+    return null;
+};
 
 // Route pour la racine "/"
 app.get('/', (req, res) => {
@@ -48,53 +71,19 @@ app.get('/api/categories/:category/reponses/:questionKey', (req, res) => {
     }
 });
 
-// Démarrer le serveur
-app.listen(port, () => {
-    console.log(`API en cours d'exécution sur http://localhost:${port}`);
-});
-
-// Middleware pour analyser les requêtes JSON
-app.use(express.json());
-
-
 // Route POST pour gérer les messages du chatbot
-/*app.post('/api/chat', (req, res) => {
-    const userMessage = req.body.message;
-
-    // Recherche de la réponse dans le fichier JSON
-    let botResponse = "Je ne connais pas la réponse à cette question.";
-    for (const category in questionsData) {
-        if (questionsData[category].reponses && questionsData[category].reponses[userMessage]) {
-            botResponse = questionsData[category].reponses[userMessage];
-            break;
-        }
-    }
-
-    res.json({ reply: botResponse });
-});*/
-
 app.post('/api/chat', (req, res) => {
     const userMessage = req.body.message.toLowerCase(); // Convertir en minuscule pour éviter les problèmes de casse
     console.log('Message reçu :', userMessage);
 
-    let botResponse = "Je ne connais pas la réponse à cette question.";
-
-    for (const category in questionsData) {
-        const categoryData = questionsData[category];
-        const reponses = categoryData["reponses"];
-        const questions = categoryData["questions"];
-
-        console.log(`Analyse de la catégorie : ${category}`);
-        console.log('Questions disponibles :', questions);
-
-        if (questions && questions.includes(userMessage)) {
-            botResponse = reponses.default || "Réponse non définie.";
-            break;
-        }
-    }
+    // Recherche de la réponse
+    const botResponse = traverseCategories(questionsData, userMessage) || "Je ne connais pas la réponse à cette question.";
 
     console.log('Réponse du bot :', botResponse);
     res.json({ reply: botResponse });
 });
 
-
+// Démarrer le serveur
+app.listen(port, () => {
+    console.log(`API en cours d'exécution sur http://localhost:${port}`);
+});
