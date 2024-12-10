@@ -74,9 +74,9 @@
 	  ],
 	  "response": "1. Accéder au document à envoyer (courrier de consultation, d'hospitalisation ou compte rendu opératoire).\n2. Vérifiez que le médecin destinataire possède une adresse mail sécurisée.\n3. Cliquez sur Envoyer après signature électronique du document."
 	},
-	"scanner_document": {
+	"scanner_document_crossway": {
 	  "questions": [
-		"Quelles sont les étapes pour scanner un document ?"
+		"Quelles sont les étapes pour scanner un document dans Crossway ?"
 	  ],
 	  "response": "1. Sélectionner un patient.\n2. Cliquer sur l’icône 'Images' pour accéder à la fonctionnalité de numérisation.\n3. Sélectionner l’événement associé au document à scanner.\n4. Cliquer sur l’icône du scanner.\n5. Sélectionner le type de document à numériser, puis cliquer sur 'Numériser'."
 	},
@@ -85,6 +85,151 @@
 		"Quelles sont les étapes pour intégrer une image ?"
 	  ],
 	  "response": "1. Sélectionner un patient.\n2. Cliquer sur l’icône 'Images' pour accéder à la fonctionnalité d'intégration d'images.\n3. Dans le menu, choisir Image puis Intégrer.\n4. Choisir la source de l'image (clé USB, disque amovible, etc.).\n5. Faire un double clic sur le document que vous souhaitez intégrer."
-	}
-  }
+	},
+
+		"declarer_rdv_non_venu": {
+			"questions": [
+				"Comment déclarer un RDV comme 'Non venu' ?"
+			],
+			"response": "Pour déclarer un RDV 'Non venu', cliquez sur le bouton 'Confirmation de clôture', cochez 'n'a pas eu lieu', renseignez le motif et validez."
+		},
+		"annuler_rdv": {
+			"questions": [
+				"Comment annuler un RDV ?"
+			],
+			"response": "Pour annuler un RDV, cliquez sur 'Confirmation de clôture', cochez 'annulé', renseignez le motif et validez."
+		},
+		"rdv_avec_productions": {
+			"questions": [
+				"Que faire si un RDV avec des productions doit être annulé ?"
+			],
+			"response": "Si un RDV avec des productions (documents, fiches) doit être annulé, déclarez-le comme 'n'a pas eu lieu' en attendant la correction du bug."
+		},
+		"consulter_dsi": {
+			"questions": [
+				"Comment consulter un DSI ?"
+			],
+			"response": "Pour consulter un DSI, accédez à la section dédiée dans l'interface du DPI, sélectionnez le patient et ouvrez son DSI."
+		},
+		"valider_document_dsi": {
+			"questions": [
+				"Quelles étapes pour valider un document DSI ?"
+			],
+			"response": "Pour valider un document DSI, cliquez sur 'Valider', saisissez vos identifiants, et confirmez la validation."
+		},
+			"acces_dsi": {
+			  "questions": [
+				"Comment accéder au module DSI ?"
+			  ],
+			  "response": "Pour accéder au module DSI :\n1. Sélectionnez un patient avec un clic sur la ligne concernée.\n2. Cliquez sur 'DSI' pour ouvrir le Dossier de Soins Interprofessionnels.\n3. Le module s’ouvre par défaut sur l’écran de planification des soins."
+			},
+			"bandeau_patient": {
+			  "questions": [
+				"Que contient le bandeau patient ?"
+			  ],
+			  "response": "Le bandeau patient présente des informations générales telles que le nom, prénom, sexe, date de naissance, âge, IPP, médecin responsable, ainsi que des accès à différentes rubriques : Recueil de données, Grilles de saisie, Transmissions ciblées, Pancarte, Documents, SIIPS et Jours J."
+			},
+			"donnees_biometrie_ajout": {
+			  "questions": [
+				"Comment ajouter des données de biométrie ?"
+			  ],
+			  "response": "Pour ajouter des données de biométrie :\n1. Cliquez sur 'Ajouter des données'.\n2. Renseignez les champs requis dans la colonne 'en cours'.\n3. Enregistrez en cliquant sur la croix verte."
+			},
+			"donnees_biometrie_modification": {
+			  "questions": [
+				"Comment modifier des données de biométrie ?"
+			  ],
+			  "response": "Pour modifier des données :\n1. Sélectionnez une colonne contenant les données.\n2. Cliquez sur le bouton de modification et ajustez les valeurs.\n3. Validez."
+			},
+			"donnees_biometrie_suppression": {
+			  "questions": [
+				"Comment supprimer des données de biométrie ?"
+			  ],
+			  "response": "Pour supprimer des données :\n1. Sélectionnez une colonne.\n2. Cliquez sur le bouton 'Supprimer'."
+			},
+			"donnees_biometrie_signature": {
+			  "questions": [
+				"Comment signer des données de biométrie ?"
+			  ],
+			  "response": "Pour signer des données :\n1. Cliquez sur le bouton 'Signer'.\n2. Validez avec votre identification électronique pour verrouiller les données."
+			},
+			"planification_soins_navigation": {
+			  "questions": [
+				"Comment naviguer dans le plan de soins ?"
+			  ],
+			  "response": "Pour naviguer dans le plan de soins :\n- Utilisez les flèches pour changer de période (jour/semaine/heure).\n- Cliquez sur un patient pour afficher son plan de soins."
+			},
+			"planification_soins_vues": {
+			  "questions": [
+				"Quelles sont les différentes vues du plan de soins ?"
+			  ],
+			  "response": "Les différentes vues :\n1. Vue simple : Planification d'un patient sur une période donnée.\n2. Vue multiple : Visualisation de l’ensemble des soins pour tous les patients.\n3. Vue groupée : Affichage des interventions et validation groupée pour tous les patients."
+			},
+			"planification_soins_filtres": {
+			  "questions": [
+				"Quels sont les filtres disponibles pour le plan de soins ?"
+			  ],
+			  "response": "Filtres disponibles :\n- Groupes de patients.\n- États des actions.\n- Périodes définies."
+			},
+			"transmissions_ciblees_acces": {
+			  "questions": [
+				"Comment accéder aux transmissions ciblées ?"
+			  ],
+			  "response": "Pour accéder aux transmissions ciblées :\n1. Sélectionnez un patient.\n2. Cliquez sur l’onglet 'Transmissions ciblées'."
+			},
+			"transmissions_ciblees_ajout": {
+			  "questions": [
+				"Comment ajouter une cible ?"
+			  ],
+			  "response": "Pour ajouter une cible :\n1. Cliquez sur 'Ajouter une cible'.\n2. Sélectionnez une cible préexistante ou créez une nouvelle cible en texte libre.\n3. Validez."
+			},
+			"transmissions_ciblees_modification": {
+			  "questions": [
+				"Comment modifier une transmission existante ?"
+			  ],
+			  "response": "Pour modifier une transmission existante :\n1. Sélectionnez une cible existante.\n2. Ajoutez des informations dans le DAR (Données, Actions, Résultats).\n3. Validez."
+			},
+			"transmissions_ciblees_fermeture": {
+			  "questions": [
+				"Comment fermer une cible ?"
+			  ],
+			  "response": "Pour fermer une cible :\n1. Cliquez sur 'Ajouter une Donnée/Action/Résultat'.\n2. Dans la colonne 'Arrêter la', cochez la ligne correspondante et validez."
+			},
+			"transmissions_ciblees_recherche": {
+			  "questions": [
+				"Comment retrouver une cible fermée ?"
+			  ],
+			  "response": "Pour retrouver une cible fermée :\n1. Cliquez sur l’icône filtre.\n2. Sélectionnez 'Cibles terminées' et validez."
+			},
+			"grille_de_saisie_acces": {
+			  "questions": [
+				"Comment accéder à la grille de saisie ?"
+			  ],
+			  "response": "Pour accéder à la grille de saisie :\n1. Sélectionnez un patient.\n2. Cliquez sur l’onglet 'Grille de saisie'.\n3. Choisissez le type de diagramme (IDE ou AS)."
+			},
+			"grille_de_saisie_remplissage": {
+			  "questions": [
+				"Comment remplir une grille de saisie ?"
+			  ],
+			  "response": "Pour remplir une grille de saisie :\n1. Cliquez sur les zones correspondantes pour ajouter des informations.\n2. Validez automatiquement en fermant la grille."
+			},
+			"scanner_document_dsi": {
+			  "questions": [
+				"Quelles sont les étapes pour scanner un document dans module DSI ?"
+			  ],
+			  "response": "Pour scanner un document :\n1. Sélectionnez un patient.\n2. Cliquez sur l’icône 'Scanner un document'.\n3. Choisissez l’événement associé.\n4. Sélectionnez le type de document et nommez-le.\n5. Finalisez en cliquant sur l’icône de confirmation."
+			},
+			"choix_imprimantes": {
+			  "questions": [
+				"Comment sélectionner une imprimante pour imprimer un document ?"
+			  ],
+			  "response": "Pour sélectionner une imprimante :\n1. Sélectionnez un patient.\n2. Cliquez sur 'Exec/Choix Imprimante'.\n3. Sélectionnez l’imprimante souhaitée dans la liste et validez."
+			}
+		  }
+		  
+	
+	
+	
+	
+
   
