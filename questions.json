@@ -1,12 +1,15 @@
 {
-	"CROSSWAY": {
+	"ACCES CROSSWAY": {
 	"acces_crossway": {
 	  "questions": [
 		"Comment se connecter à Crossway ?",
 		"Comment avoir accès au module Crossway ?"
 	  ],
 	  "response": "Voici les étapes permettant d’accéder à Crossway :\n- Double clic sur le module\n- Saisir le login puis la signature personnelle, valider la signature\n- Sélectionner le planning puis Validation."
-	},
+	}
+},
+	
+	"MODULE UNIT": {
 	"acces_filtres": {
 	  "questions": [
 		"Comment afficher les filtres ?",
@@ -14,6 +17,7 @@
 	  ],
 	  "response": "Pour afficher et mettre un filtre, il suffit de cliquer en bas de l’écran du planning de l’unité de soins.\nNota : Par défaut, l'affichage se fait sur les patients présents du planning."
 	},
+
 	"liste_filtres": {
 	  "questions": [
 		"Quels sont les différents filtres ?",
@@ -28,32 +32,69 @@
 	  ],
 	  "response": "Lorsque le patient est rentré et sorti sur la journée en cours, il ne sera visible que par le filtre 'Mouvements d'un jour donné'.\nEn haut à gauche de l'écran, sélectionner Planning / Recherche des séjours d'un patient.\nL'écran de recherche s'ouvre. Saisir les premières lettres du nom et prénom du patient (+/- date de naissance). Les différents séjours s'afficheront pour la sélection du séjour demandé."
 	},
-	"consultation_dossiers": {
-	  "questions": [
-		"Comment accéder à la synthèse du dossier médical d’un patient ?",
-		"Que contient la synthèse du dossier médical ?",
-		"Comment visualiser des données spécifiques de la synthèse ?",
-		"Que contient la partie gauche de l'écran de synthèse ?",
-		"Que contient la partie droite de l'écran de synthèse ?",
-		"Quels filtres sont disponibles dans la synthèse ?"
-	  ],
-	  "response": "La synthèse regroupe tout le dossier médical du patient, notamment les événements et productions concernant le patient. Ces informations s'affichent dans un ordre chronologique inversé.\n- La partie gauche affiche les événements du patient sélectionné, avec différents documents et informations gérés dans Crossway.\n- La partie droite affiche les détails des éléments sélectionnés dans la partie gauche.\nFiltres disponibles :\n- Types d’événements (actes, diagnostics, documents, etc.) et objets.\n- Filtre sur une période donnée, sur tout le dossier ou certaines unités médicales (UM) de l’établissement."
-	},
-	"rdv": {
-	  "questions": [
-		"Comment accéder aux rendez-vous d’un patient ?",
-		"Quels types d'informations sont disponibles dans les RDV ?",
-		"Que signifie l’icône d’un rendez-vous dans l’arborescence ?"
-	  ],
-	  "response": "Depuis l’écran d’accueil de UNIT, cliquer sur le bouton Rendez-vous pour visualiser tous les rendez-vous du patient ainsi que les documents liés. Les rendez-vous affichent les dates, les types de RDV (plateaux techniques, consultations) et les documents associés."
-	},
+
+		"consultation_synthese_acces": {
+		  "questions": [
+			"Comment accéder à la synthèse du dossier médical d’un patient ?"
+		  ],
+		  "response": "La synthèse regroupe tout le dossier médical du patient, notamment les événements et productions concernant le patient. Ces informations s'affichent dans un ordre chronologique inversé. Pour y accéder, ouvrez l'onglet 'Synthèse' dans le dossier du patient."
+		},
+		"consultation_synthese_contenu": {
+		  "questions": [
+			"Que contient la synthèse du dossier médical ?"
+		  ],
+		  "response": "La synthèse contient tout le dossier médical du patient, notamment les événements, diagnostics, prescriptions, actes, documents et autres données médicales pertinentes affichées dans un ordre chronologique inversé."
+		},
+		"consultation_synthese_donnees_specifiques": {
+		  "questions": [
+			"Comment visualiser des données spécifiques de la synthèse ?"
+		  ],
+		  "response": "Pour visualiser des données spécifiques, utilisez les filtres dans la barre d’outils de la synthèse pour sélectionner les types d’événements ou documents que vous souhaitez voir."
+		},
+		"consultation_synthese_partie_gauche": {
+		  "questions": [
+			"Que contient la partie gauche de l'écran de synthèse ?"
+		  ],
+		  "response": "La partie gauche de l'écran de synthèse affiche les événements du patient, incluant les diagnostics, actes et documents organisés par ordre chronologique."
+		},
+		"consultation_synthese_partie_droite": {
+		  "questions": [
+			"Que contient la partie droite de l'écran de synthèse ?"
+		  ],
+		  "response": "La partie droite de l'écran de synthèse affiche les détails des éléments sélectionnés dans la partie gauche, permettant une vue détaillée des informations pertinentes."
+		},
+		"consultation_synthese_filtres": {
+		  "questions": [
+			"Quels filtres sont disponibles dans la synthèse ?"
+		  ],
+		  "response": "Les filtres disponibles incluent :\n- Types d’événements (actes, diagnostics, documents, etc.)\n- Période donnée\n- Toutes les unités médicales (UM) ou certaines unités spécifiques"
+		},
+		"rdv_acces": {
+		  "questions": [
+			"Comment accéder aux rendez-vous d’un patient ?"
+		  ],
+		  "response": "Depuis l’écran d’accueil de UNIT, cliquez sur le bouton 'Rendez-vous' pour afficher la liste complète des rendez-vous d’un patient."
+		},
+		"rdv_informations": {
+		  "questions": [
+			"Quels types d'informations sont disponibles dans les RDV ?"
+		  ],
+		  "response": "Les informations disponibles incluent :\n- Les dates des rendez-vous\n- Les types de rendez-vous (consultations, plateaux techniques, etc.)\n- Les documents associés à chaque rendez-vous"
+		},
+		"rdv_icones": {
+		  "questions": [
+			"Que signifie l’icône d’un rendez-vous dans l’arborescence ?"
+		  ],
+		  "response": "Les icônes des rendez-vous indiquent le type de rendez-vous (consultation, examen, etc.) et leur état (confirmé, annulé, non venu)."
+	  },
+	  
 	"filtrer_evenements": {
   "questions": [
     "Comment filtrer les événements affichés pour un patient ?"
   ],
   "response": "Depuis l’onglet Filtres ou Filtres avancés, vous pouvez filtrer les événements sur des critères tels que les actes, diagnostics, documents, etc., ainsi que sur une période donnée ou des unités médicales spécifiques."
 },
-"evenements_afficher_chronologique": {
+"evenements_afficher_chronologie": {
   "questions": [
     "Comment afficher les événements en ordre chronologique ?"
   ],
@@ -96,9 +137,9 @@
 	  ],
 	  "response": "1. Accéder au document à envoyer (courrier de consultation, d'hospitalisation ou compte rendu opératoire).\n2. Vérifiez que le médecin destinataire possède une adresse mail sécurisée.\n3. Cliquez sur Envoyer après signature électronique du document."
 	},
-	"scanner_document_crossway": {
+	"scanner_document_unit": {
 	  "questions": [
-		"Quelles sont les étapes pour scanner un document dans Crossway ?"
+		"Quelles sont les étapes pour scanner un document dans le module UNIT ?"
 	  ],
 	  "response": "1. Sélectionner un patient.\n2. Cliquer sur l’icône 'Images' pour accéder à la fonctionnalité de numérisation.\n3. Sélectionner l’événement associé au document à scanner.\n4. Cliquer sur l’icône du scanner.\n5. Sélectionner le type de document à numériser, puis cliquer sur 'Numériser'."
 	},
@@ -108,6 +149,57 @@
 	  ],
 	  "response": "1. Sélectionner un patient.\n2. Cliquer sur l’icône 'Images' pour accéder à la fonctionnalité d'intégration d'images.\n3. Dans le menu, choisir Image puis Intégrer.\n4. Choisir la source de l'image (clé USB, disque amovible, etc.).\n5. Faire un double clic sur le document que vous souhaitez intégrer."
 	},
+
+
+		"acces_prescription": {
+		  "questions": [
+			"Comment accéder au module Prescription ?"
+		  ],
+		  "response": "Pour accéder au module Prescription, ouvrez le dossier du patient, puis cliquez sur l'onglet 'Prescription' dans le menu principal."
+		},
+		"acces_contenu_dossierPatient": {
+		  "questions": [
+			"Comment accéder au contenu du dossier d'un patient et aux informations des autres patients ?"
+		  ],
+		  "response": "Pour accéder au contenu du dossier d'un patient, sélectionnez son nom dans la liste. Pour afficher les informations des autres patients, utilisez les onglets ou le moteur de recherche situé en haut de l'écran."
+		},
+		"acces_bandeau_poids_taille": {
+		  "questions": [
+			"Comment accéder au bandeau contenant le poids et la taille du patient ?"
+		  ],
+		  "response": "Le bandeau affichant le poids et la taille est situé en haut du module Prescription. Vérifiez que ces informations sont correctement renseignées pour une saisie optimale des prescriptions."
+		},
+		"recherche_elements_prescriptibles": {
+		  "questions": [
+			"Comment utiliser le moteur de recherche pour trouver des éléments prescriptibles ?"
+		  ],
+		  "response": "Pour rechercher un élément prescriptible, utilisez le moteur de recherche situé dans la section 'Prescription'. Saisissez un mot-clé ou le nom exact du médicament, et sélectionnez l'entrée correspondante dans la liste déroulante."
+		},
+		"description_icones": {
+		  "questions": [
+			"Que signifient les icônes des colonnes 'S', 'I', 'CI', et 'N' ?"
+		  ],
+		  "response": "Les colonnes suivantes indiquent les informations sur les prescriptions :\n- **S** : Médicament substituable.\n- **I** : Médicament injectable.\n- **CI** : Contre-indication.\n- **N** : Narcotique."
+		},
+		"description_colonne_etat": {
+		  "questions": [
+			"Que représente la colonne 'État' dans les prescriptions ?"
+		  ],
+		  "response": "La colonne 'État' indique le statut d'une prescription. Les valeurs possibles sont :\n- **Active** : La prescription est en cours.\n- **Suspendue** : La prescription est temporairement mise en pause.\n- **Arrêtée** : La prescription a été interrompue."
+		},
+		"saisie_prescription": {
+		  "questions": [
+			"Comment saisir une prescription ?"
+		  ],
+		  "response": "Pour saisir une prescription :\n1. Accédez au module Prescription.\n2. Cliquez sur 'Ajouter une prescription'.\n3. Renseignez les informations nécessaires telles que le médicament, la dose, et la fréquence.\n4. Validez la saisie pour l'enregistrer."
+		},
+		"saisie_ordonnance_sortie": {
+		  "questions": [
+			"Comment saisir une ordonnance de sortie de médicament ?"
+		  ],
+		  "response": "Pour saisir une ordonnance de sortie :\n1. Ouvrez le dossier du patient.\n2. Sélectionnez l'option 'Ordonnance de sortie' dans le module Prescription.\n3. Ajoutez les médicaments nécessaires en indiquant les doses et la durée du traitement.\n4. Imprimez l'ordonnance après validation."
+		},
+	  
 
 		"declarer_rdv_non_venu": {
 			"questions": [
@@ -126,7 +218,12 @@
 				"Que faire si un RDV avec des productions doit être annulé ?"
 			],
 			"response": "Si un RDV avec des productions (documents, fiches) doit être annulé, déclarez-le comme 'n'a pas eu lieu' en attendant la correction du bug."
-		},
+		}
+	},
+
+
+
+"MODULE DSI": {
 		"consulter_dsi": {
 			"questions": [
 				"Comment consulter un DSI ?"
@@ -248,8 +345,8 @@
 			  "response": "Pour sélectionner une imprimante :\n1. Sélectionnez un patient.\n2. Cliquez sur 'Exec/Choix Imprimante'.\n3. Sélectionnez l’imprimante souhaitée dans la liste et validez."
 			}
 		  }
-		}
-		  
+		
+		} 
 	
 	
 	
