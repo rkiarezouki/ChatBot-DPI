@@ -22,11 +22,10 @@ const traverseCategories = (data, userMessage) => {
     for (const category in data) {
         const categoryData = data[category];
         const questions = categoryData.questions || [];
-        const reponses = categoryData.reponses || {};
 
         // Vérifie si la question correspond (en ignorant la casse)
         if (questions.some(q => q.toLowerCase() === userMessage)) {
-            return reponses.default || "Réponse non définie.";
+            return categoryData.response || "Réponse non définie.";
         }
 
         // Si sous-catégorie, continue la recherche
@@ -37,6 +36,7 @@ const traverseCategories = (data, userMessage) => {
     }
     return null;
 };
+
 
 // Route pour la racine "/"
 app.get('/', (req, res) => {
