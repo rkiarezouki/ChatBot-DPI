@@ -1,4 +1,5 @@
 {
+	"CROSSWAY": {
 	"acces_crossway": {
 	  "questions": [
 		"Comment se connecter à Crossway ?",
@@ -247,6 +248,7 @@
 			  "response": "Pour sélectionner une imprimante :\n1. Sélectionnez un patient.\n2. Cliquez sur 'Exec/Choix Imprimante'.\n3. Sélectionnez l’imprimante souhaitée dans la liste et validez."
 			}
 		  }
+		}
 		  
 	
 	
