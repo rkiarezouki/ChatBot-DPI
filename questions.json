@@ -46,16 +46,37 @@
 	  ],
 	  "response": "Depuis l’écran d’accueil de UNIT, cliquer sur le bouton Rendez-vous pour visualiser tous les rendez-vous du patient ainsi que les documents liés. Les rendez-vous affichent les dates, les types de RDV (plateaux techniques, consultations) et les documents associés."
 	},
-	"elements_communs": {
-	  "questions": [
-		"Comment filtrer les événements affichés pour un patient ?",
-		"Comment afficher les événements en ordre chronologique ?",
-		"Comment afficher un document en plein écran ?",
-		"Comment imprimer un document ou un ensemble de documents ?",
-		"Quels sont les onglets disponibles pour la consultation de la synthèse, des RDV ou des séjours ?"
-	  ],
-	  "response": "Depuis l’onglet Filtres ou Filtres avancés, vous pouvez filtrer les événements sur des critères tels que les actes, diagnostics, documents, etc., ainsi que sur une période donnée ou des unités médicales spécifiques.\n- L'impression est possible en sélectionnant un ou plusieurs éléments dans la partie gauche, puis en cliquant sur le bouton d'impression. L’identité du patient est affichée en en-tête des documents imprimés."
-	},
+	"filtrer_evenements": {
+  "questions": [
+    "Comment filtrer les événements affichés pour un patient ?"
+  ],
+  "response": "Depuis l’onglet Filtres ou Filtres avancés, vous pouvez filtrer les événements sur des critères tels que les actes, diagnostics, documents, etc., ainsi que sur une période donnée ou des unités médicales spécifiques."
+},
+"evenements_afficher_chronologique": {
+  "questions": [
+    "Comment afficher les événements en ordre chronologique ?"
+  ],
+  "response": "Depuis l’onglet Filtres ou Filtres avancés, choisissez l’option pour afficher les événements en ordre chronologique en fonction des critères sélectionnés."
+},
+"document_afficher_plein_ecran": {
+  "questions": [
+    "Comment afficher un document en plein écran ?"
+  ],
+  "response": "Cliquez sur un document ou un événement pour l’ouvrir, puis utilisez l’option plein écran dans la barre d’outils ou via un raccourci clavier si disponible."
+},
+"imprimer_documents": {
+  "questions": [
+    "Comment imprimer un document ou un ensemble de documents ?"
+  ],
+  "response": "Sélectionnez un ou plusieurs éléments dans la partie gauche de l’écran, puis cliquez sur le bouton d'impression. L’identité du patient sera automatiquement ajoutée en en-tête des documents imprimés."
+},
+"onglets_consultation": {
+  "questions": [
+    "Quels sont les onglets disponibles pour la consultation de la synthèse, des RDV ou des séjours ?"
+  ],
+  "response": "Les onglets disponibles incluent Synthèse, RDV et Séjours. Chaque onglet permet d’accéder rapidement aux informations spécifiques à ces catégories pour le patient sélectionné."
+},
+
 	"creation_documents": {
 	  "questions": [
 		"Comment créer un document pour un patient ?"
